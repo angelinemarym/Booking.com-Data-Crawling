@@ -26,14 +26,27 @@ The script crawls a maximum of 20 hotels, with each hotel having up to 5 image U
 ## Installation
 
 Before running the script, follow these installation steps:
-- (Optional: create & activate a virtual environment) virtualenv venv, then source venv/bin/activate
+- Optional: create & activate a virtual environment:
+    - Install venv module: `pip install virtualenv`
+    - To use venv in the project, go to the project folder directory, and run the following command: `python<version> -m venv <virtual-environment-name>`
+    Example:
+    ```
+    python3.11 -m venv venv
+    ```
+    - Activate the virtual environment
+    ```
+    source venv/bin/activate // For Linux Based OS Or Mac-OS
+    .\venv\Scripts\activate.bat // For Windows With CMD
+    .\venv\Scripts\activate.ps1 // For Windows With Powershell
+    source venv/Scripts/activate // For Windows With Unix Like Shells For Example Git Bash CLI
+    ```
 - `pip install -r requirements.txt`
 
 ## Usage
 
 Run the script with the following command:
 ```
-python3 booking_scraper.py
+python main.py
 ```
 
 ## Additional information
